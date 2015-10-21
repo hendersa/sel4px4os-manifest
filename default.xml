@@ -37,7 +37,8 @@
     <project name="libplatsupport.git" path="libs/libplatsupport"/>
     <project name="libutils.git" path="libs/libutils"/>
 
-    <project name="refos.git" path="projects/refos">
+    <!-- Our version of the userspace apps for PX4 stack -->
+    <project name="sel4px4os.git" path="projects/refos" remote="hendersa">
         <!-- symlinks to make the project structure fit the build system -->
         <linkfile src="impl/Makefile" dest="Makefile"/>
         <linkfile src="impl/Kbuild" dest="Kbuild"/>
