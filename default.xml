@@ -12,21 +12,14 @@
 
 <manifest>
 
-    <!-- We assume this manifest is in the same path as all the libraries. If you are
-     copying this manifest as a template then you probably want the fetch path
-     for this to be '../seL4' instead of '.' -->
-    <remote name="seL4"
-        fetch="."
-    />
-
-    <!-- default revision for each project, and name of the remote -->
-    <default revision="master"
-        remote="seL4"
-    />
+    <!-- Set up the repos and fault fetch options -->
+    <remote name="seL4" fetch="git://github.com/seL4/" />
+    <remote name="hendersa" fetch="git://github.com/hendersa/" />
+    <default revision="master" remote="seL4" sync-j="4" />
 
     <!-- list of 'projects' (i.e repositories), path is relative to the path in remote above -->
     <project name="seL4.git" path="kernel" revision="experimental" />
-    <project name="common-tool.git" path="tools/common"/>
+<!--    <project name="common-tool.git" path="tools/common"/> -->
     <project name="kbuild-tool.git" path="tools/kbuild"/>
     <project name="elfloader-tool.git" path="tools/elfloader"/>
     <project name="libmuslc.git" path="libs/libmuslc"/>
@@ -72,5 +65,9 @@
         <linkfile src="LICENSE_BSD2.txt" dest="LICENSE_BSD2.txt"/>
     </project>
 
+<!-- Our modifications -->
+<!-- <project name="musllibc.git" path="libs/libmuslc" revision="sel4" remote="hendersa"/> -->
+    <project name="sel4px4-uclibcpp.git" path="libs/libuclibc++" remote="hendersa"/>
+    <project name="px4-common-tool.git" path="tools/common" remote="hendersa"/>
 
 </manifest>
