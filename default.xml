@@ -60,14 +60,16 @@
         <linkfile src="impl/libs/librefos" dest="libs/librefos"/>
         <linkfile src="impl/libs/librefossys" dest="libs/librefossys"/>
         <linkfile src="impl/libs/libvterm" dest="libs/libvterm"/>
+
+        <!-- symlinks for PX4 firmware libraries -->
+        <linkfile src="impl/libs/libpx4conversion" dest="libs/libpx4firmware" />
         
         <!-- symlink for RefOS readme -->
         <linkfile src="README.md" dest="README.md"/>
         <linkfile src="LICENSE_BSD2.txt" dest="LICENSE_BSD2.txt"/>
     </project>
 
-<!-- Our modifications -->
-<!-- <project name="musllibc.git" path="libs/libmuslc" revision="sel4" remote="hendersa"/> -->
+    <!-- Our modifications -->
     <project name="sel4px4-uclibcpp.git" path="libs/libuclibc++" remote="hendersa"/>
     <project name="px4-common-tool.git" path="tools/common" remote="hendersa"/>
 
