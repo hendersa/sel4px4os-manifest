@@ -62,7 +62,7 @@
         <linkfile src="impl/libs/libvterm" dest="libs/libvterm"/>
 
         <!-- symlinks for PX4 firmware libraries -->
-        <linkfile src="impl/libs/libpx4conversion" dest="libs/libpx4firmware" />
+        <linkfile src="impl/libs/libpx4conversion" dest="libs/libpx4conversion" />
         
         <!-- symlink for RefOS readme -->
         <linkfile src="README.md" dest="README.md"/>
