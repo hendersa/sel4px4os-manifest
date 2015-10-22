@@ -64,6 +64,7 @@
         <!-- symlinks for PX4 firmware libraries -->
         <linkfile src="impl/libs/libpx4conversion" dest="libs/libpx4conversion" />
         <linkfile src="impl/libs/libpx4mathlib" dest="libs/libpx4mathlib" />        
+        <linkfile src="impl/libs/libpx4systemlib" dest="libs/libpx4systemlib" />
 
         <!-- symlink for PX4 includes -->
         <linkfile src="impl/include" dest="px4include" />
