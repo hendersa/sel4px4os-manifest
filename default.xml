@@ -64,6 +64,10 @@
         <!-- symlinks for PX4 firmware libraries -->
         <linkfile src="impl/libs/libpx4conversion" dest="libs/libpx4conversion" />
         <linkfile src="impl/libs/libpx4mathlib" dest="libs/libpx4mathlib" />        
+
+        <!-- symlink for PX4 includes -->
+        <linkfile src="impl/include" dest="include/px4" />
+
         <!-- symlink for RefOS readme -->
         <linkfile src="README.md" dest="README.md"/>
         <linkfile src="LICENSE_BSD2.txt" dest="LICENSE_BSD2.txt"/>
