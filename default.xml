@@ -66,7 +66,7 @@
         <linkfile src="impl/libs/libpx4mathlib" dest="libs/libpx4mathlib" />        
 
         <!-- symlink for PX4 includes -->
-        <linkfile src="impl/include" dest="include/px4" />
+        <linkfile src="impl/include" dest="px4include" />
 
         <!-- symlink for RefOS readme -->
         <linkfile src="README.md" dest="README.md"/>
