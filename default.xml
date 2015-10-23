@@ -22,7 +22,9 @@
 <!--    <project name="common-tool.git" path="tools/common"/> -->
     <project name="kbuild-tool.git" path="tools/kbuild"/>
     <project name="elfloader-tool.git" path="tools/elfloader"/>
-    <project name="libmuslc.git" path="libs/libmuslc"/>
+<!-- AWH: Use same libmuslc as the mainline seL4 kernel does -->
+<!-- <project name="libmuslc.git" path="libs/libmuslc"/> -->
+    <project name="musllibc.git" path="libs/libmuslc" revision="sel4"/>
     <project name="libsel4muslcsys.git" path="libs/libsel4muslcsys"/>
     <project name="libsel4platsupport.git" path="libs/libsel4platsupport"/>
     <project name="elfloader-tool.git" path="libs/elfloader"/>
