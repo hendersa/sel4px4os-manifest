@@ -66,6 +66,7 @@
         <linkfile src="impl/libs/libpx4mathlib" dest="libs/libpx4mathlib" />        
         <linkfile src="impl/libs/libpx4systemlib" dest="libs/libpx4systemlib" />
         <linkfile src="impl/libs/libpx4eigen" dest="libs/libpx4eigen" />
+        <linkfile src="impl/libs/libpx4drivers" dest="libs/libpx4drivers" />
 
         <!-- symlink for PX4 includes -->
         <linkfile src="impl/include" dest="px4include" />
