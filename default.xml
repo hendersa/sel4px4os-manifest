@@ -22,9 +22,7 @@
 <!--    <project name="common-tool.git" path="tools/common"/> -->
     <project name="kbuild-tool.git" path="tools/kbuild"/>
     <project name="elfloader-tool.git" path="tools/elfloader"/>
-<!-- AWH: Use same libmuslc as the mainline seL4 kernel does -->
-<!-- <project name="libmuslc.git" path="libs/libmuslc"/> -->
-    <project name="musllibc.git" path="libs/libmuslc" revision="sel4"/>
+    <project name="libmuslc.git" path="libs/libmuslc"/>
     <project name="libsel4muslcsys.git" path="libs/libsel4muslcsys"/>
     <project name="libsel4platsupport.git" path="libs/libsel4platsupport"/>
     <project name="elfloader-tool.git" path="libs/elfloader"/>
@@ -64,6 +62,7 @@
         <linkfile src="impl/libs/libvterm" dest="libs/libvterm"/>
 
         <!-- symlinks for PX4 firmware libraries -->
+        <linkfile src="impl/libs/libpx4compat" dest="libs/libpx4compat" />
         <linkfile src="impl/libs/libpx4conversion" dest="libs/libpx4conversion" />
         <linkfile src="impl/libs/libpx4mathlib" dest="libs/libpx4mathlib" />        
         <linkfile src="impl/libs/libpx4systemlib" dest="libs/libpx4systemlib" />
