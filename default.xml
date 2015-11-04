@@ -69,6 +69,13 @@
         <linkfile src="impl/libs/libpx4systemlib" dest="libs/libpx4systemlib" />
         <linkfile src="impl/libs/libpx4eigen" dest="libs/libpx4eigen" />
         <linkfile src="impl/libs/libpx4drivers" dest="libs/libpx4drivers" />
+        <linkfile src="impl/libs/libpx4controllib" dest="libs/libpx4controllib" />
+        <linkfile src="impl/libs/libpx4dataman" dest="libs/libpx4dataman" />
+        <linkfile src="impl/libs/libpx4geo" dest="libs/libpx4geo" />
+        <linkfile src="impl/libs/libpx4geo_lookup" dest="libs/libpx4geo_lookup" />
+        <linkfile src="impl/libs/libpx4fw_pos_control_l1" dest="libs/libpx4fw_pos_control_l1" />
+        <linkfile src="impl/libs/libpx4uorb" dest="libs/libpx4uorb" />
+        <linkfile src="impl/libs/libpx4unit_test" dest="libs/libpx4unit_test" />
 
         <!-- symlink for PX4 includes -->
         <linkfile src="impl/include" dest="px4include" />
