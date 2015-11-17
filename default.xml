@@ -26,6 +26,7 @@
 <!--    <project name="libmuslc.git" path="libs/libmuslc"/> -->
     <project name="libsel4muslcsys.git" path="libs/libsel4muslcsys"/>
     <project name="libsel4platsupport.git" path="libs/libsel4platsupport"/>
+    <project name="elfloader-tool.git" path="libs/elfloader"/>
     <project name="libsel4allocman.git" path="libs/libsel4allocman"/>
     <project name="libsel4vka.git" path="libs/libsel4vka"/>
     <project name="libsel4vspace.git" path="libs/libsel4vspace"/>
