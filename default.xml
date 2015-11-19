@@ -18,12 +18,11 @@
     <default revision="master" remote="seL4" sync-j="4" />
 
     <!-- list of 'projects' (i.e repositories), path is relative to the path in remote above -->
-    <project name="seL4.git" path="kernel" revision="experimental" />
+<!--    <project name="seL4.git" path="kernel" revision="experimental" /> -->
 <!--    <project name="common-tool.git" path="tools/common"/> -->
     <project name="kbuild-tool.git" path="tools/kbuild"/>
     <project name="elfloader-tool.git" path="tools/elfloader"/>
-    <project name="musllibc.git" path="libs/libmuslc" revision="sel4"/>
-<!--    <project name="libmuslc.git" path="libs/libmuslc"/> -->
+<!--    <project name="musllibc.git" path="libs/libmuslc" revision="sel4"/> -->
     <project name="libsel4muslcsys.git" path="libs/libsel4muslcsys"/>
     <project name="libsel4platsupport.git" path="libs/libsel4platsupport"/>
     <project name="elfloader-tool.git" path="libs/elfloader"/>
@@ -86,7 +85,8 @@
     </project>
 
     <!-- Our modifications -->
+    <project name="seL4.git" path="kernel" remote="hendersa" revision="experimental" />
     <project name="sel4px4-uclibcpp.git" path="libs/libuclibc++" remote="hendersa"/>
     <project name="px4-common-tool.git" path="tools/common" remote="hendersa"/>
-
+    <project name="musllibc.git" path="libs/libmuslc" remote="hendersa" revision="sel4"/>
 </manifest>
